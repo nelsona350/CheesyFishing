@@ -37,7 +37,7 @@ class App:
                           (460,585,"blue"),(910,615,"blue"),
                           (400,400,"bass"),(880,285,"bass")]
         
-        self.radius = 50
+        self.radius = 20
         
     def onClick(self, event):
         #print('Clicked canvas at: ', event.x, event.y, event.widget)
