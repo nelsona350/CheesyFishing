@@ -115,10 +115,10 @@ class App:
         self.fishWindow.grab_set()
         weight = np.round(20*np.random.lognormal(mean=0.0, sigma=1.0, size=None))
         weight = weight + np.round(np.random.normal(10000.0,3000.0),0)
-        #label1 = Label(self.fishWindow, text="You caught a " + str(weight) + " pound mosasaurus!")
-        label1 = Label(self.fishWindow, text="You caught nothing!")
+        label1 = Label(self.fishWindow, text="You caught a " + str(weight) + " pound mosasaurus!")
+        #label1 = Label(self.fishWindow, text="You caught nothing!")
         label1.grid(row=0, column=0)
-        #label2 = Label(self.fishWindow, image=self.mosa1)
+        label2 = Label(self.fishWindow, image=self.mosa1)
         label2.grid(row=1, column=0)
                 
 if __name__ == "__main__":
