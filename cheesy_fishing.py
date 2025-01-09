@@ -12,13 +12,13 @@ class App:
         root.geometry("%dx%d" % (width, height))
         root.state('zoomed')
         
-        self.bg = PhotoImage(file="pond1.png",master=root)
+        self.bg = PhotoImage(file="images/pond1.png",master=root)
         
-        self.carp = Image.open("carp2.jfif").resize((400, 400))
-        self.bass = Image.open("bass1.jfif").resize((400, 400))
-        self.bluegill = Image.open("bluegill.png").resize((400, 400))
-        self.catfish = Image.open("catfish.jfif").resize((400, 400))
-        self.mosa = Image.open("mosa.jpg").resize((400, 400))
+        self.carp = Image.open("images/carp2.jfif").resize((400, 400))
+        self.bass = Image.open("images/bass1.jfif").resize((400, 400))
+        self.bluegill = Image.open("images/bluegill.png").resize((400, 400))
+        self.catfish = Image.open("images/catfish.jfif").resize((400, 400))
+        self.mosa = Image.open("images/mosa.jpg").resize((400, 400))
         
         self.carp1 = ImageTk.PhotoImage(self.carp)
         self.bass1 = ImageTk.PhotoImage(self.bass)
